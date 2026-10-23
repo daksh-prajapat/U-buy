@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ubuy Login</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="wrapper">
+  <div class="box">
+
+    <div class="tabs">
+      <button class="tab active" id="tabLogin">Log In</button>
+      <button class="tab" id="tabSignup">Sign Up</button>
+    </div>
+
+    <div class="panel" id="loginPanel">
+      <form id="loginForm" autocomplete="off">
+
+        <input type="email" class="inp" id="loginEmail" placeholder="Email Address *">
+
+        <div class="cred-row">
+          <div class="toggle-group">
+            <button type="button" class="tog active" id="loginPwBtn">Password</button>
+            <button type="button" class="tog" id="loginOtpBtn">OTP</button>
+          </div>
+          <div class="inp-side">
+            <div class="pw-wrap" id="loginPwWrap">
+              <input type="password" class="inp" id="loginPw" placeholder="Password *">
+              <button type="button" class="eye" id="loginEye">
+                <i class="fa-regular fa-eye"></i>
+              </button>
+            </div>
+            <input type="text" class="inp hide" id="loginOtp" placeholder="OTP *" maxlength="6">
+          </div>
+        </div>
+
+        <div class="hint-line">
+          <a href="#" class="hint" id="loginForgot">Forgot Your Password?</a>
+          <a href="#" class="hint hide" id="loginGetOtp">Get OTP ?</a>
+        </div>
+
+        <button type="submit" class="btn">Login</button>
+
+      </form>
+
+      <div class="social">
+        <div class="s-icons">
+          <i class="fa-brands fa-google"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-apple"></i>
+          <i class="fa-brands fa-paypal"></i>
+        </div>
+        <span class="s-text">Login with Social Accounts</span>
+      </div>
+    </div>
+
+    <div class="panel hide" id="signupPanel">
+      <form id="signupForm" autocomplete="off">
+
+        <input type="email" class="inp" id="signupEmail" placeholder="Email Address *">
+
+        <div class="cred-row">
+          <div class="toggle-group">
+            <button type="button" class="tog active" id="signupOtpBtn">OTP</button>
+            <button type="button" class="tog" id="signupPwBtn">Password</button>
+          </div>
+          <div class="inp-side">
+            <input type="text" class="inp" id="signupOtp" placeholder="OTP *" maxlength="6">
+            <div class="pw-wrap hide" id="signupPwWrap">
+              <input type="password" class="inp" id="signupPw" placeholder="Password *">
+              <button type="button" class="eye" id="signupEye">
+                <i class="fa-regular fa-eye"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="hint-line">
+          <a href="#" class="hint" id="signupGetOtp">Get OTP ?</a>
+          <a href="#" class="hint hide" id="signupForgot">Forgot Your Password?</a>
+        </div>
+
+        <label class="mail-row">
+          <input type="checkbox" id="mailingCb">
+          <span class="cb-box"></span>
+          <span class="mail-text">Join Our Mailing List- Get updates on Rollbacks, special pricing, hot new items, gift ideas and more.</span>
+        </label>
+
+        <div class="captcha">
+          <label class="cap-left">
+            <span class="cap-cb-wrap">
+              <input type="checkbox" id="captchaCb">
+              <span class="cap-box"></span>
+            </span>
+            <span>I'm not a robot</span>
+          </label>
+          <div class="cap-right">
+            <i class="fa-solid fa-arrows-rotate cap-icon"></i>
+            <span class="cap-brand">reCAPTCHA</span>
+            <span class="cap-privacy">Privacy - Terms</span>
+          </div>
+        </div>
+
+        <button type="submit" class="btn">Register</button>
+
+        <p class="terms">By continuing, you agree to Ubuy's <a href="#">Terms and Conditions</a></p>
+
+      </form>
+
+      <div class="social">
+        <div class="s-icons">
+          <i class="fa-brands fa-google"></i>
+          <i class="fa-brands fa-facebook"></i>
+          <i class="fa-brands fa-apple"></i>
+          <i class="fa-brands fa-paypal"></i>
+        </div>
+        <span class="s-text">Login with Social Accounts</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
